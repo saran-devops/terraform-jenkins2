@@ -30,3 +30,7 @@ variable "key_name" {
   description = " SSH keys to connect to ec2 instance"
   default     = "ubuntu-tf"
 }
+
+variable "aws_key_pair" {
+  default = "~/ubuntu-tf.pem"
+}

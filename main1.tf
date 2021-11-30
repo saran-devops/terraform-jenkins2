@@ -55,7 +55,7 @@ resource "aws_instance" "terraformCM" {
     type        = "ssh"
     host        = self.public_ip
     user        = "ubuntu"
-    private_key = file("~/ubuntu-tf.pem")
+    private_key = file(var.aws_key_pair)
   }
 
 }
