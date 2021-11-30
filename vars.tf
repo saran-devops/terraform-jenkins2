@@ -32,5 +32,5 @@ variable "key_name" {
 }
 
 variable "aws_key_pair" {
-  default = "/root/ubuntu-tf.pem"
+  default = "/tmp/ubuntu-tf.pem"
 }
