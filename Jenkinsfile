@@ -33,7 +33,7 @@ pipeline {
         }
         stage ("terrafrom plan") {
             steps {
-                sh 'terraform plan -out=plan'
+                sh 'terraform plan'
             }
         }
         stage ("terraform Action") {
